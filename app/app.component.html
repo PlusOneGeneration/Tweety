@@ -1,28 +1,2 @@
 <ActionBar title="Tweety" class="action-bar"></ActionBar>
-
-<GridLayout rows="auto, *">
-    <SearchBar col="0" row="0" id="query" [(ngModel)]="query" hint="Search by" (submit)="search()"></SearchBar>
-
-    <ListView [items]="tweets" row="1" (loadMoreItems)="listViewLoadMoreItems()">
-        <ng-template let-item="item">
-            <GridLayout rows="auto,*" columns="auto, *"  verticalAlignment="center" class="tweet-box">
-                <Image [src]="item.user.profile_image_url"
-                       col="0" rowSpan="2"
-                       class="tweet-user-image">
-                </Image>
-
-                <Label [text]="item.user.name"
-                       col="1" row="0"
-                       class="tweet-user-name">
-                </Label>
-
-                <Label [text]="item.text"
-                       col="1" row="1"
-                       textWrap="true"
-                       class="tweet-message">
-                </Label>
-            </GridLayout>
-        </ng-template>
-    </ListView>
-
-</GridLayout>
+<page-router-outlet></page-router-outlet>
