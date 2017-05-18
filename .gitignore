@@ -1,0 +1,6 @@
+.idea/
+/node_modules
+/hooks
+/platforms
+/app/App_Resources
+*.js
