@@ -14,11 +14,11 @@ export class TwitterService {
 
     search(query: string) {
         query = encodeURIComponent(query);
-        return this.twitterResource.search(query);
+        return this.twitterResource.search('?q=' + query);
     };
 
     searchMore(query: string) {
-        return this.twitterResource.searchMore(query);
+        return this.twitterResource.search(query);
     };
 
 }

@@ -11,8 +11,8 @@ import {TwitterService} from "../services/twitter-service";
 export class TweetsComponent {
     tweets;
     query: string = '';
+    isBusy: boolean = false;
     private nextResult: string;
-    private isBusy: boolean = false;
 
     constructor(private twitterService: TwitterService) {
     }
@@ -32,7 +32,7 @@ export class TweetsComponent {
     };
 
     listViewLoadMoreItems() {
-        if (this.isBusy || !this.nextResult) {
+        if (this.isBusy || !this.nextResult || !this.query) {
             return;
         }
 
@@ -54,5 +54,10 @@ export class TweetsComponent {
             }, (err) => {
                 console.log('err', err);
             });
+    };
+
+    searchCleanUp() {
+        delete this.query;
+        delete this.nextResult;
     };
 }

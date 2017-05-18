@@ -36,23 +36,23 @@ export class TwitterResource {
         });
 
         return this.http.get(
-            'https://api.twitter.com/1.1/search/tweets.json?q=' + query,
-            {headers: headers}
-        ).map((response) => {
-            return response.json();
-        });
-    }
-
-    searchMore(query: string) {
-        let headers = new Headers({
-            'Authorization': 'Bearer ' + this.configService.getTwitterToken()
-        });
-
-        return this.http.get(
             'https://api.twitter.com/1.1/search/tweets.json' + query,
             {headers: headers}
         ).map((response) => {
             return response.json();
         });
-    }
+    };
+
+    // searchMore(query: string) {
+    //     let headers = new Headers({
+    //         'Authorization': 'Bearer ' + this.configService.getTwitterToken()
+    //     });
+    //
+    //     return this.http.get(
+    //         'https://api.twitter.com/1.1/search/tweets.json' + query,
+    //         {headers: headers}
+    //     ).map((response) => {
+    //         return response.json();
+    //     });
+    // }
 }

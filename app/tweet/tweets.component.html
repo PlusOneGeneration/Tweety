@@ -1,6 +1,7 @@
 <GridLayout rows="auto, *">
     <SearchBar [(ngModel)]="query"
                (submit)="search()"
+               (clear)="searchCleanUp()"
                col="0" row="0" id="query" hint="Search by">
     </SearchBar>
 
