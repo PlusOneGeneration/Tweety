@@ -10,6 +10,7 @@ import {TwitterResource} from "./resources/twitter-resources";
 import {TweetsComponent} from "./tweet/tweets.component";
 
 import {routes, navigatableComponents} from "./app.routing";
+import {ConfigService} from "./services/config-service";
 
 @NgModule({
     declarations: [
@@ -25,7 +26,8 @@ import {routes, navigatableComponents} from "./app.routing";
         NativeScriptRouterModule.forRoot(routes)],
     providers: [
         TwitterResource,
-        TwitterService],
+        TwitterService,
+        ConfigService],
     schemas: [NO_ERRORS_SCHEMA],
 })
 export class AppModule {
