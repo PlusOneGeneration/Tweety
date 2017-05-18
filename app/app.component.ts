@@ -21,7 +21,6 @@ export class AppComponent {
             .subscribe((result) => {
                 if (result && result.statuses) {
                     this.tweets = result.statuses;
-                    console.dir(result.statuses);
                     if (result.search_metadata && result.search_metadata.next_results) {
                         this.nextResult = result.search_metadata.next_results;
                     }
