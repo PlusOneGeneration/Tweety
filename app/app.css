@@ -2,19 +2,20 @@
 
 
 .tweet-box {
-    padding: 5px;
+    padding: 25px;
 }
 
 .tweet-message {
     margin-bottom: 5px;
-    font-size: 16px;
+    font-size: 18px;
     text-align: left;
 }
 
 .tweet-user-image {
     margin: 15px;
-    width: 100px;
-    height: 100px;
+    margin-right: 50px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     border-width: 3px;
     border-color: aquamarine;
