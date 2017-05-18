@@ -1,14 +1,19 @@
 <ActionBar title="Tweety" class="action-bar"></ActionBar>
 
 <GridLayout rows="auto, *">
-
-    <GridLayout rows="auto,*" columns="*, auto">
-        <SearchBar col="0" row="0" id="query" [(ngModel)]="query" hint="Search by" (submit)="search()"></SearchBar>
-    </GridLayout>
+    <SearchBar col="0" row="0" id="query" [(ngModel)]="query" hint="Search by" (submit)="search()"></SearchBar>
 
     <ListView [items]="tweets" row="1" (loadMoreItems)="listViewLoadMoreItems()">
         <ng-template let-item="item">
-                <Label [text]="item.text"></Label>
+            <GridLayout rows="auto,*" columns="auto, *" padding="5">
+                <Image col="0" margin="5" marginRight="10"
+                       src="http://piq.codeus.net/static/media/userpics/piq_65453_400x400.png"
+                       width="50"
+                       height="50"></Image>
+
+                <Label fontSize="16" margin="5" textAlignment="left" textWrap="true" [text]="item.text" col="1">
+                </Label>
+            </GridLayout>
         </ng-template>
     </ListView>
 
