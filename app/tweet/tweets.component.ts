@@ -22,16 +22,14 @@ export class TweetsComponent {
             .subscribe((result) => {
                 if (result && result.statuses) {
                     this.tweets = result.statuses;
-                    if (result.search_metadata && result.search_metadata.next_results) {
-                        this.nextResult = result.search_metadata.next_results;
-                    }
+                    this.prepareNextQuery(result);
                 }
             }, (err) => {
                 console.log('err', err);
             });
     };
 
-    listViewLoadMoreItems() {
+    searchMoreItems() {
         if (this.isBusy || !this.nextResult || !this.query) {
             return;
         }
@@ -43,11 +41,7 @@ export class TweetsComponent {
                 if (result && result.statuses) {
                     this.tweets = this.tweets.concat(result.statuses);
 
-                    if (result.search_metadata && result.search_metadata.next_results) {
-                        this.nextResult = result.search_metadata.next_results;
-                    } else {
-                        this.nextResult = null;
-                    }
+                    this.prepareNextQuery(result);
 
                     this.isBusy = false;
                 }
@@ -59,5 +53,13 @@ export class TweetsComponent {
     searchCleanUp() {
         delete this.query;
         delete this.nextResult;
+    };
+
+    private prepareNextQuery(result) {
+        if (result.search_metadata && result.search_metadata.next_results) {
+            this.nextResult = result.search_metadata.next_results;
+        } else {
+            this.nextResult = null;
+        }
     };
 }

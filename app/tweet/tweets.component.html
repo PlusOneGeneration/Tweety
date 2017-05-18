@@ -5,7 +5,7 @@
                col="0" row="0" id="query" hint="Search by">
     </SearchBar>
 
-    <ListView [items]="tweets" row="1" (loadMoreItems)="listViewLoadMoreItems()">
+    <ListView [items]="tweets" row="1" (loadMoreItems)="searchMoreItems()">
         <ng-template let-item="item">
             <GridLayout rows="auto,*" columns="auto, *" verticalAlignment="center" class="tweet-box">
                 <Image [src]="item.user.profile_image_url"
