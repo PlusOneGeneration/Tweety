@@ -1,1 +1,27 @@
 @import "nativescript-theme-core/css/aqua.css";
+
+
+.tweet-box {
+    padding: 5px;
+}
+
+.tweet-message {
+    margin-bottom: 5px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.tweet-user-image {
+    margin: 15px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-width: 3px;
+    border-color: aquamarine;
+}
+
+.tweet-user-name {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+}
