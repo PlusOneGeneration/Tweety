@@ -1,6 +1,13 @@
 # Tweety
 
-Simple application for getting messages from Twitter by query. This project has written with:
+Simple application for getting messages from Twitter by query. Looks like these:
+
+![Tweety_search_by_nativescript](https://github.com/PlusOneGeneration/Tweety/blob/master/presentation_images/tweety_screenshot_nativescript.jpg)             ![Tweety_search_by_ua](https://github.com/PlusOneGeneration/Tweety/blob/master/presentation_images/tweety_screenshot_ua.jpg)
+
+
+
+
+This project has written with:
 * [NativeScript](http://www.nativescript.org/)
 * [NativeScriptUI](https://docs.nativescript.org/angular/ui/components.html)
 * [Angular.io](https://angular.io/)
