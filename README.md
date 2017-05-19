@@ -19,8 +19,7 @@ This project has written with:
 Follow step by step and you will be run this project on your machine.
 
 * Set up your system. On the [NativeScript](http://www.nativescript.org/) side you can find [hands-on tutorials](http://docs.nativescript.org/angular/start/quick-setup) that walk you set up your system.
-* Clone project from GitHub by link 
-```git clone PASTE HTTPS OR SSH HERE```
+* Clone project from GitHub by link SSH ```git clone git@github.com:PlusOneGeneration/Tweety.git``` or ```git clone https://github.com/PlusOneGeneration/Tweety.git```
 * Run ```tns install```
 * Run ```tns run android```
 
