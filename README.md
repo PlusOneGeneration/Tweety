@@ -17,7 +17,7 @@ Follow step by step and you will be run this project on your machine.
 For testing application on mobile you need to follow by next steps:
 * run ```tns build android```
 * go to ```platforms/android/build/outputs/apk``` and you have a ```Tweety-debug.apk``` file and you just need to download it on your mobile and run!
-* run and install ``Tweety-debug.apk```. Voila! You have Tweety on your phone
+* run and install ```Tweety-debug.apk```. Voila! You have Tweety on your phone
 
 # Authors
 * **_Irina Drozdova (feya)_** - developer
