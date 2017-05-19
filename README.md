@@ -11,7 +11,7 @@ Simple application for getting messages from Twitter by query. This project has 
 
 Follow step by step and you will be run this project on your machine.
 
-* Set Up Your System. On the [NativeScript](http://www.nativescript.org/) side you can find [hands-on tutorials](http://docs.nativescript.org/angular/start/quick-setup) that walk you set up your system.
+* Set up your system. On the [NativeScript](http://www.nativescript.org/) side you can find [hands-on tutorials](http://docs.nativescript.org/angular/start/quick-setup) that walk you set up your system.
 * Clone project from GitHub by link 
 ```git clone PASTE HTTPS OR SSH HERE```
 * Run ```tns install```
